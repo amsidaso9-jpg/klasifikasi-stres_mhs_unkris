@@ -73,7 +73,7 @@ LABEL_KELAS = {0: "Rendah", 1: "Sedang", 2: "Tinggi"}
 # =====================================================================
 # 4. HEADER APLIKASI
 # =====================================================================
-st.title("🧠 Aplikasi Klasifikasi Tingkat Stres Mahasiswa")
+st.title("🧠 Deteksi Tingkat Stres Mahasiswa Berbasis PSS-10")
 st.markdown("**Universitas Krisnadwipayana Jakarta**")
 st.write(
     "Isi kuesioner PSS-10 di bawah ini sesuai kondisi yang Anda rasakan "
