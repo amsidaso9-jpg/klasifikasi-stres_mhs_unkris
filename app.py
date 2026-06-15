@@ -132,7 +132,8 @@ with st.form(key="form_pss10"):
 # =====================================================================
 if st.button("🔄 Isi Ulang Kuesioner", use_container_width=False):
     for i in range(10):
-        st.session_state[f"q_{i}"] = 0
+        if f"q_{i}" in st.session_state:
+            del st.session_state[f"q_{i}"]
     if "hasil_analisis" in st.session_state:
         del st.session_state["hasil_analisis"]
     st.rerun()
